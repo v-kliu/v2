@@ -47,12 +47,25 @@ export default function Education() {
 
             {/* Right: Content */}
             <div className="space-y-4">
-              {/* Degree & Institution */}
-              <div>
-                <h3 className="text-slate-lightest text-lg md:text-xl font-bold mb-1 group-hover:text-pink transition-colors duration-300">
-                  {edu.degree}
-                </h3>
-                <p className="text-cyan text-sm md:text-base font-medium">{edu.institution}</p>
+              {/* Degree & Institution with Logo */}
+              <div className="flex items-start gap-3">
+                {/* Logo */}
+                {edu.logo && (
+                  <div className="flex-shrink-0 w-12 h-12 rounded overflow-hidden bg-white/5 border border-cyan/20 flex items-center justify-center p-1">
+                    <img
+                      src={edu.logo}
+                      alt={edu.institution}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                )}
+
+                <div className="flex-1">
+                  <h3 className="text-slate-lightest text-lg md:text-xl font-bold mb-1 group-hover:text-pink transition-colors duration-300">
+                    {edu.degree}
+                  </h3>
+                  <p className="text-cyan text-sm md:text-base font-medium">{edu.institution}</p>
+                </div>
               </div>
 
               {/* Description */}

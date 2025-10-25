@@ -106,12 +106,15 @@ export default function Sidebar({ activeSection, onNavigate }: SidebarProps) {
 
             {/* Subtitle */}
             <p className="text-slate text-base md:text-lg mb-5">
-              Student • Founder • Incoming SDE Intern
+              Student • Founder • Incoming SDE @ Amazon
             </p>
 
             {/* One-line bio */}
             <p className="text-slate-light text-sm md:text-base leading-relaxed max-w-md">
-              Building products that solve real problems. Computer Science @ University of Washington.
+              Building products that solve real problems.
+            </p>
+            <p className="text-slate-light text-sm md:text-base leading-relaxed max-w-md">
+              Computer Science @ University of Washington.
             </p>
           </motion.div>
 

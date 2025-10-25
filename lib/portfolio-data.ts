@@ -71,10 +71,18 @@ export const education: EducationItem[] = [
   {
     institution: "University of Washington",
     degree: "B.S. in Computer Science",
-    date: "Aug 2023 - Jun 2026",
+    date: "Aug 2023 - Mar 2026",
     description:
-      "Pursuing a B.S. in Computer Science with a minor in Entrepreneurship at the University of Washington. I hold various leadership positions, am a TA, and am actively involved in tech clubs and hackathons.",
-    coursework: ["Data Structures", "Algorithms", "Database Systems", "Software Engineering"],
+      "Pursuing a B.S. in Computer Science with a minor in Entrepreneurship at the University of Washington. I hold various leadership positions, am a TA, and am actively involved in the startup community on campus.",
+    logo: "/images/uw_logo.png",
+  },
+  {
+    institution: "National University of Singapore",
+    degree: "University of Exchange",
+    date: "Aug 2025 - Dec 2025",
+    description:
+      "Completed a university exchange at NUS to explore Asia’s entrepreneurial ecosystem and gain a global perspective on technology and innovation.",
+    logo: "/images/nus_logo.jpg",
   },
 ]
 
@@ -84,48 +92,40 @@ export const education: EducationItem[] = [
 export const experiences: ExperienceItem[] = [
   {
     company: "Amazon Web Services",
-    title: "Incoming SDE Intern",
+    title: "Incoming SDE 1",
+    date: "July 2026",
+    description: [
+      "Returning as a full-time SDE to Amazon."
+    ],
+    tech: [],
+    logo: "/images/amazon.svg",
+  },
+  {
+    company: "Amazon Web Services",
+    title: "Software Developer Engineer Intern",
     date: "May 2025 - Aug 2025",
     description: [
-      "Identity and Access Management team focusing on secure, scalable systems",
-      "Building cloud security infrastructure at massive scale",
-      "Working with distributed systems and AWS services",
+      "Developed and deployed a large-scale data integrity system for AWS IAM to strengthen credential validation and global infrastructure security. Designed algorithms for daily credential analysis that detect anomalies and maintain consistent access integrity across regions.",
     ],
     tech: ["AWS", "Java", "Distributed Systems"],
     logo: "/images/AWS.jpg",
   },
   {
-    company: "eduResume",
+    company: "Soarin",
     title: "Founder",
     date: "Jan 2025 - Present",
     description: [
-      "Transforming college applications into professional resumes and LinkedIn profiles",
-      "Built full-stack EdTech platform serving students nationwide",
-      "Leading product development and go-to-market strategy",
+      "Founded Soarin, an EdTech platform that helps students transform their college applications into professional resumes and LinkedIn profiles. Endorsed by the UW and interviwed by Y Combinator.",
     ],
     tech: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS"],
     logo: "/images/dubhacks_next_logo.png",
-  },
-  {
-    company: "M9",
-    title: "Software Developer Intern",
-    date: "Jul 2024 - Sep 2024",
-    description: [
-      "Designed six responsive web pages using Next.js and Tailwind CSS",
-      "Built marketing insights platform for industry analysis",
-      "Increased customer acquisition by 30%",
-    ],
-    tech: ["Next.js", "Tailwind CSS", "TypeScript"],
-    logo: "/images/m9.jpg",
   },
   {
     company: "University of Nevada, Reno",
     title: "Machine Learning Intern",
     date: "Feb 2023 - Sep 2023",
     description: [
-      "Developed ML program solving Flow app puzzles using reinforcement learning",
-      "Implemented pathfinding algorithms and Q-learning",
-      "Achieved 80% accuracy and 5x speed improvement over humans",
+      "Partnered with a UNR professor to research and prototype a reinforcement learning model capable of solving Flow puzzles. Explored algorithmic efficiency, neural network integration, and data-driven pathfinding approaches within a custom Python environment.",
     ],
     tech: ["Python", "PyTorch", "Q-learning"],
     logo: "/images/unr_logo.jpg",
@@ -136,11 +136,11 @@ export const experiences: ExperienceItem[] = [
  * Featured project
  */
 export const featuredProject: Project = {
-  title: "eduResume",
+  title: "Soarin",
   description:
     "An EdTech platform that helps students transform their college applications into professional resumes and LinkedIn profiles. Built with Next.js, Firebase, and Pinecone, focused on user experience and accessibility. Currently serving students nationwide with AI-powered resume optimization.",
   tech: ["Next.js", "TypeScript", "Firebase", "Pinecone", "Tailwind", "OpenAI"],
-  liveUrl: "https://eduresume.com",
+  liveUrl: "https://soarin.dev/",
   githubUrl: "https://github.com/v-kliu/eduresume",
   featured: true,
   image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/eduresume-QmOdluSZ6Fo5oUSrQa35dpbs6NzjyM.png",
@@ -156,6 +156,7 @@ export const projects: Project[] = [
       "Led team of 4 to develop a ReactJS full-stack app, syncing personal calendars to highlight shared availability. Implemented a responsive UI, integrating Google Calendar API with Firebase handling 7000+ data points.",
     tech: ["TypeScript", "ReactJS", "Google Calendar API", "Firebase"],
     githubUrl: "https://github.com/v-kliu/time-sync",
+    liveUrl: "https://time-sync-uw.vercel.app/",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/timesync-apAgHHPQCNmDFmsVu1n2kyJ4ilxOH4.png",
   },
   {

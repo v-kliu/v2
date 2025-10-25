@@ -167,7 +167,7 @@ export default function Portfolio() {
         <section
           id="education"
           ref={setSectionRef("education")}
-          className="min-h-screen flex items-center px-6 md:px-12 lg:px-20 py-4"
+          className="flex items-start px-6 md:px-12 lg:px-20 py-24"
         >
           <Education />
         </section>
@@ -176,7 +176,7 @@ export default function Portfolio() {
         <section
           id="projects"
           ref={setSectionRef("projects")}
-          className="min-h-screen flex items-center px-6 md:px-12 lg:px-20 py-4"
+          className="flex items-start px-6 md:px-12 lg:px-20 py-12"
         >
           <Projects />
         </section>

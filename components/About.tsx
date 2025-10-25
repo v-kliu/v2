@@ -13,8 +13,6 @@ export default function About() {
   const techStack = [
     "JavaScript/TypeScript",
     "React",
-    "Next.js",
-    "Node.js",
     "Python",
     "Java",
     "C/C++",
@@ -28,7 +26,7 @@ export default function About() {
       {/* Bio */}
       <div className="space-y-6 text-slate-light text-base md:text-lg leading-relaxed max-w-[700px]">
         <p>
-          Hello! I'm Victor, a student, founder, and software engineer driven by curiosity to build things that matter.
+          Hello! I'm Victor, born and raised in Nevada and now a student, founder, and software engineer driven by a curiosity to build things.
         </p>
 
         <p>
@@ -36,11 +34,11 @@ export default function About() {
           <span className="text-cyan">Computer Science</span> and{" "}
           <span className="text-cyan">Entrepreneurship</span> at the{" "}
           <span className="text-cyan">University of Washington</span>, and I'm an incoming{" "}
-          <a href="https://aws.amazon.com" className="text-cyan hover:underline hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.6)] transition-all duration-300" target="_blank" rel="noreferrer">
-            Amazon SDE intern
-          </a>. Currently building{" "}
+          <a href="https://amazon.com" className="text-cyan hover:underline hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.6)] transition-all duration-300" target="_blank" rel="noreferrer">
+            SDE @ Amazon
+          </a>. Currently studying abroad at <span className="text-cyan">National University of Singapore</span> and building{" "}
           <a href="https://eduresume.com" className="text-cyan hover:underline hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.6)] transition-all duration-300" target="_blank" rel="noreferrer">
-            eduResume
+            Soarin
           </a>
           , an EdTech platform helping students transform college applications into professional resumes.
         </p>
