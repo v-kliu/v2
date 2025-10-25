@@ -20,7 +20,7 @@ interface ProjectCardProps {
  */
 export default function ProjectCard({ children, className = "", featured = false }: ProjectCardProps) {
   const [isHovering, setIsHovering] = useState(false)
-  const hoverTimeoutRef = useRef<NodeJS.Timeout>()
+  const hoverTimeoutRef = useRef<NodeJS.Timeout | undefined>(undefined)
 
   const handleMouseEnter = () => {
     setIsHovering(true)

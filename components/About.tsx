@@ -1,7 +1,5 @@
 "use client"
 
-import { motion } from "framer-motion"
-
 /**
  * About Section Component
  * Detailed story and background
@@ -26,13 +24,7 @@ export default function About() {
   ]
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="w-full"
-    >
+    <div className="w-full">
       {/* Bio */}
       <div className="space-y-6 text-slate-light text-base md:text-lg leading-relaxed max-w-[700px]">
         <p>
@@ -99,6 +91,6 @@ export default function About() {
           </a>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
