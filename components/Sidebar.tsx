@@ -27,13 +27,14 @@ export default function Sidebar({ activeSection, onNavigate }: SidebarProps) {
   const navItems = [
     { id: "about", label: "ABOUT" },
     { id: "experience", label: "EXPERIENCE" },
+    { id: "education", label: "EDUCATION" },
     { id: "projects", label: "PROJECTS" },
   ]
 
   const socialLinks = [
     { icon: Github, href: "https://github.com/v-kliu", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/vkliu/", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:victorkliu05@gmail.com", label: "Email" },
+    { icon: Mail, href: "mailto:vkliu@uw.edu", label: "Email" },
   ]
 
   const handleNavClick = (sectionId: string) => {
@@ -81,7 +82,7 @@ export default function Sidebar({ activeSection, onNavigate }: SidebarProps) {
             <div className="mb-6 relative group w-fit">
               <div className="w-32 h-32 md:w-36 md:h-36 overflow-hidden border-2 border-cyan/30 group-hover:border-cyan transition-all duration-300">
                 <img
-                  src="/headshot.jpg"
+                  src="/images/profile.jpg"
                   alt="Victor Liu"
                   className="w-full h-full object-cover"
                   onError={(e) => {

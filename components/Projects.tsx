@@ -36,7 +36,7 @@ export default function Projects() {
       <h2 className="text-slate-lightest font-bold text-2xl md:text-3xl mb-8">Projects</h2>
 
       {/* Projects Grid */}
-      <motion.div className="grid md:grid-cols-2 gap-6" variants={stagger}>
+      <motion.div className="grid md:grid-cols-3 gap-4" variants={stagger}>
         {allProjects.slice(0, 6).map((project, index) => (
           <motion.div
             key={index}
@@ -44,15 +44,23 @@ export default function Projects() {
             className="group bg-navy-light rounded-lg overflow-hidden hover:shadow-v4 hover:shadow-pink/20 transition-all duration-300"
           >
             {/* Image */}
-            <div className="aspect-video bg-navy-lightest flex items-center justify-center text-slate/30 text-xl font-bold relative overflow-hidden">
-              <span>{project.title}</span>
+            <div className="aspect-video bg-navy-lightest flex items-center justify-center text-slate/30 text-sm font-bold relative overflow-hidden">
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <span>{project.title}</span>
+              )}
               <div className="absolute inset-0 bg-pink/20 opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
 
             {/* Content */}
-            <div className="p-6">
-              <div className="flex items-start justify-between mb-3">
-                <h3 className="text-slate-lightest font-semibold text-lg group-hover:text-pink group-hover:drop-shadow-[0_0_8px_rgba(255,0,110,0.6)] transition-all duration-300">
+            <div className="p-4">
+              <div className="flex items-start justify-between mb-2">
+                <h3 className="text-slate-lightest font-semibold text-base group-hover:text-pink group-hover:drop-shadow-[0_0_8px_rgba(255,0,110,0.6)] transition-all duration-300">
                   {project.liveUrl ? (
                     <a href={project.liveUrl} target="_blank" rel="noreferrer">
                       {project.title}
@@ -61,7 +69,7 @@ export default function Projects() {
                     project.title
                   )}
                 </h3>
-                <div className="flex gap-3">
+                <div className="flex gap-2">
                   {project.githubUrl && project.githubUrl !== "#" && (
                     <a
                       href={project.githubUrl}
@@ -69,7 +77,7 @@ export default function Projects() {
                       rel="noreferrer"
                       className="text-slate-light hover:text-pink hover:drop-shadow-[0_0_8px_rgba(255,0,110,0.6)] transition-all duration-300"
                     >
-                      <Github size={18} />
+                      <Github size={16} />
                     </a>
                   )}
                   {project.liveUrl && (
@@ -79,18 +87,18 @@ export default function Projects() {
                       rel="noreferrer"
                       className="text-slate-light hover:text-pink hover:drop-shadow-[0_0_8px_rgba(255,0,110,0.6)] transition-all duration-300"
                     >
-                      <ExternalLink size={18} />
+                      <ExternalLink size={16} />
                     </a>
                   )}
                 </div>
               </div>
 
-              <p className="text-slate-light text-sm mb-4 line-clamp-3">{project.description}</p>
+              <p className="text-slate-light text-xs mb-3 line-clamp-2">{project.description}</p>
 
               {/* Tech Stack */}
-              <div className="flex flex-wrap gap-2">
-                {project.tech.slice(0, 4).map((tech, i) => (
-                  <span key={i} className="text-xs text-slate font-mono bg-navy px-2 py-1 rounded">
+              <div className="flex flex-wrap gap-1.5">
+                {project.tech.slice(0, 3).map((tech, i) => (
+                  <span key={i} className="text-[10px] text-slate font-mono bg-navy px-2 py-0.5 rounded">
                     {tech}
                   </span>
                 ))}

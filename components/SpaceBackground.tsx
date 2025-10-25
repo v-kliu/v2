@@ -36,11 +36,11 @@ export default function SpaceBackground() {
   // Generate stars on client side only to avoid hydration mismatch
   useEffect(() => {
     setStars(
-      Array.from({ length: 50 }, (_, i) => ({
+      Array.from({ length: 200 }, (_, i) => ({
         id: i,
         top: Math.random() * 100,
         left: Math.random() * 100,
-        size: Math.random() * 2 + 1,
+        size: Math.random() * 3 + 2,
         delay: Math.random() * 4,
         duration: Math.random() * 2 + 2,
       }))

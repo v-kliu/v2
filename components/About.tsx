@@ -11,16 +11,16 @@
  */
 export default function About() {
   const techStack = [
-    "JavaScript (ES6+)",
-    "TypeScript",
+    "JavaScript/TypeScript",
     "React",
     "Next.js",
     "Node.js",
     "Python",
+    "Java",
+    "C/C++",
     "AWS",
-    "Docker",
-    "PostgreSQL",
-    "MongoDB",
+    "Firebase",
+    "PyTorch",
   ]
 
   return (
@@ -28,29 +28,21 @@ export default function About() {
       {/* Bio */}
       <div className="space-y-6 text-slate-light text-base md:text-lg leading-relaxed max-w-[700px]">
         <p>
-          Hello! I'm Victor, a student, founder, and software developer driven by curiosity. My journey into technology
-          started in Reno, Nevada, where I watched my parents program slot machines—turns out debugging casino games
-          teaches you a lot about persistence and problem-solving!
+          Hello! I'm Victor, a student, founder, and software engineer driven by curiosity to build things that matter.
         </p>
 
         <p>
-          I relocated to Seattle to pursue greater opportunities in tech and am currently studying{" "}
-          <span className="text-cyan">Computer Science</span> at the{" "}
-          <span className="text-cyan">University of Washington</span> with a minor in Entrepreneurship.
-          I'm also founding{" "}
+          I'm studying{" "}
+          <span className="text-cyan">Computer Science</span> and{" "}
+          <span className="text-cyan">Entrepreneurship</span> at the{" "}
+          <span className="text-cyan">University of Washington</span>, and I'm an incoming{" "}
+          <a href="https://aws.amazon.com" className="text-cyan hover:underline hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.6)] transition-all duration-300" target="_blank" rel="noreferrer">
+            Amazon SDE intern
+          </a>. Currently building{" "}
           <a href="https://eduresume.com" className="text-cyan hover:underline hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.6)] transition-all duration-300" target="_blank" rel="noreferrer">
             eduResume
           </a>
-          , an EdTech platform transforming college applications into professional resumes and LinkedIn profiles.
-        </p>
-
-        <p>
-          This summer, I'll be joining{" "}
-          <a href="https://aws.amazon.com" className="text-cyan hover:underline hover:drop-shadow-[0_0_8px_rgba(0,217,255,0.6)] transition-all duration-300" target="_blank" rel="noreferrer">
-            Amazon Web Services
-          </a>
-          {" "}as an SDE Intern on the Identity and Access Management team. I'm passionate about building secure, scalable
-          systems and creating technology that opens doors for others.
+          , an EdTech platform helping students transform college applications into professional resumes.
         </p>
 
         {/* Tech Stack */}
@@ -69,7 +61,7 @@ export default function About() {
         {/* Resume Download Button */}
         <div className="mt-10">
           <a
-            href="/resume.pdf"
+            href="/files/victor_liu_resume.pdf"
             download="Victor_Liu_Resume.pdf"
             className="inline-flex items-center gap-2 px-8 py-4 border-2 border-cyan text-cyan hover:bg-cyan/10 hover:drop-shadow-[0_0_12px_rgba(0,217,255,0.6)] transition-all duration-300 rounded font-mono text-sm"
           >
